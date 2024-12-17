@@ -4,7 +4,7 @@ public without sharing class DevopsDashboardController {
 		return [
 			SELECT id, name, assigned_to__c, status__c, importance__c
 			FROM Salesforce_DevOps_Task__c
-			WHERE status__c != 'Completed'
+			WHERE status__c != 'Completed' AND assigned_to__c != NULL
 		];
 	}
 	@AuraEnabled(Cacheable=true)
