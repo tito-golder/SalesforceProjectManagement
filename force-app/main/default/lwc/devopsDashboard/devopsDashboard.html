@@ -1,0 +1,34 @@
+<template>
+    <div style="background-color: #fafcff; z-index: 500">
+        <div class="experiencebanner">
+            <c-fire-banner title="Salesforce Activity Tracker">
+            </c-fire-banner>
+        </div>
+        <div>
+            <div lwc={people} style={gridStyle}>
+                <div class="person" iterator:person={people} key={person.value.name}>{person.value.name}</div>
+                <div class="plan" iterator:person={people} key={person.value.name}>
+                    <h1>In Progress ({person.value.inProgress.length})</h1>
+                    <div class="item" iterator:task={person.value.inProgress} key={task.value.name}>
+                        <div class="itemblob" style={task.value.style}>{task.value.urgency}</div>
+                        <div>{task.value.name}</div>
+                    </div>
+                </div>
+                <div class="plan" iterator:person={people} key={person.value.name}>
+                    <h1>Next ({person.value.future.length})</h1>
+                    <div class="item" iterator:task={person.value.future} key={task.value.name}>
+                        <div class="itemblob" style={task.value.style}>{task.value.urgency}</div>
+                        <div>{task.value.name}</div>
+                    </div>
+                </div>
+                <div class="plan" iterator:person={people} key={person.value.name}>
+                    <h1>Paused ({person.value.paused.length})</h1>
+                    <div class="item" iterator:task={person.value.paused} key={task.value.name}>
+                        <div class="itemblob" style={task.value.style}>{task.value.urgency}</div>
+                        <div>{task.value.name}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

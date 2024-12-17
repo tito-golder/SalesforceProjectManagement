@@ -1,0 +1,113 @@
+@font-face {
+	font-display: swap;
+	font-family: castledown-regular;
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("/resource/PBSFonts/castledown-regular.woff") format("woff2"),
+		url("/resource/castledown-regular.woff") format("woff");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: castledown-bold;
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("/resource/PBSFonts/castledown-bold.woff2") format("woff2"),
+		url("/resource/PBSFonts//castledown-bold.woff") format("woff");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: centra-light;
+	font-style: normal;
+	font-weight: 300;
+	src:
+		url("/resource/PBSFonts/centra-no1-light.woff2") format("woff2"),
+		url("/resource/PBSFonts/centra-no1-light.woff") format("woff");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: centra-book;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url("/resource/PBSFonts/centra-no1-book.woff2") format("woff2"),
+		url("/resource/PBSFonts/centra-no1-book.woff") format("woff");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: centra-medium;
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url("/resource/PBSFonts/centra-no1-medium.woff2") format("woff2"),
+		url("/resource/PBSFonts/centra-no1-medium.woff") format("woff");
+}
+
+.person {
+	text-align: center;
+	font-family: castledown-regular;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #ed1944;
+}
+
+.plan {
+	background-color: #dadcef;
+	border-radius: 10px;
+	padding: 10px;
+	height: 275px;
+	overflow: hidden;
+}
+
+.item {
+	text-align: center;
+	font-family: centra-light;
+	font-size: 1.4em;
+	padding: 5px 10px;
+	color: #1d2951;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: 40px;
+	display: flex;
+}
+
+.item div {
+	flex-shrink: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.itemblob {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 8px;
+	margin-right: 5px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	flex-shrink: 0 !important;
+}
+
+.item span {
+	display: inline-block;
+}
+
+h1 {
+	font-family: castledown-regular;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #1d2951;
+}
+
+.experiencebanner {
+	height: 85px;
+	background-color: white;
+	border-bottom: 2px solid #e30138;
+}
